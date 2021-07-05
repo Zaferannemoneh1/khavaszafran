@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>صفحه اغازین</title>
+</head>
+
+<body>
+<table border="4" height="100%" width="100%">
+<table border="4" height="50" width="100%" align="center">
+
+<marquee behavior="alternate" bgcolor="#FF0004" font loop="100" direction="left" height="50" >
+ نگـــــــــــــین زعفـــــــــران</marquee>
+<tr>
+<td width="33%" align="center" color="red">
+  <strong>
+  <a href="zaferanha.html" target="new"style="text-decoration:none">
+  <font color="#000000">نمونه زعفران</font></a></strong></td>
+<td width="33%" align="center"><strong><a href="darbare.html"> زعفران و خواص ان</a></strong></td>
+<td width="33%" align="center" color="red">
+<a href="form.html" target="new"><strong>عضویت درسایت</strong></a></td>
+</tr>
+</table>
+</table>
+
+<style type="text/css">
+body{ background:#FFFFFF}
+
+#main{ width:700px; height:600px; background:#FFFFFF; margin:0px auto}
+#pic{ width:600px; height:300px; background:red; margin:auto; margin-top:0px}
+#pic1{ width:600px; height:300px; background:url(1.jpeg); }
+#pic2{ width:600px; height:300px; background:url(2.jpeg); display:none}
+#pic3{ width:600px; height:300px; background: url(3.jpeg);display:none }
+#pic4{ width:600px; height:300px; background: url(4.jpeg);display:none}
+#bpic{ width:404px; height:104px; margin-left:150px; margin-top:20px}
+#bpic1{ width:100px; height:100px; background: url(5.jpeg); float:left; border:1.5px solid #A056A3 }
+#bpic2{ width:100px; height:100px; background:url(6.jpeg);  float:left}
+#bpic3{ width:100px; height:100px; background: url(7.jpeg); float:left }
+#bpic4{ width:100px; height:100px; background:url(8.jpeg); float:left}
+
+</style>
+
+
+
+
+<div id="main">
+  <div id="pic">
+    <div id="pic1"></div>
+        <div id="pic2"></div>
+        <div id="pic3"></div>
+        <div id="pic4"></div>
+  </div>
+    <div id="bpic">
+        <div id="bpic1"></div>
+        <div id="bpic2"></div>
+        <div id="bpic3"></div>
+        <div id="bpic4"></div>
+    </div>
+</div>
+<script type="text/javascript">
+	var count=1;
+	function nextpic(){
+	
+		id='pic'+count;
+		idb='bpic'+count;
+		obj=document.getElementById(id);
+		objb=document.getElementById(idb);
+		obj.style.display='none';
+		objb.style.border='0px solid #A056A3';
+		count++;
+		if(count==5) count=1;
+		id2='pic'+count;
+		idb2='bpic'+count;
+		obj2=document.getElementById(id2);
+		objb2=document.getElementById(idb2);
+		obj2.style.display='block';
+		objb2.style.border='1.5px solid #A056A3';
+
+	
+	}
+	var back1=4;	
+	function backpic(){
+idi='pic'+back1;
+		idbi='bpic'+back1;
+		obji=document.getElementById(idi);
+		objbi=document.getElementById(idbi);
+		obji.style.display='none';
+		objbi.style.border='0px solid #A056A3';
+		back1--;
+		if(back1==1) back1=4;
+		id2i='pic'+back1;
+		idb2i='bpic'+back1;
+		obj2i=document.getElementById(id2i);
+		objb2i=document.getElementById(idb2i);
+		obj2i.style.display='block';
+		objb2i.style.border='1.5px solid #A056A3';
+
+		
+
+		}
+
+setInterval('nextpic()',3000);
+
+</script>
+ <h2  align="right">         </h2> 
+       </pre></h4>
+    </div>
+<footer >
+        <hr align="right">
+        <h1 align="right"> خواص زعفران ها</h1>
+     <h3  align="right"><pre>
+خواص زعفران و نمونه های مختلف زعفران را از سایت من دنبال کنید
+</pre></h3>
+           
+                <img src="logo.jpeg" style="float:right;">
+        
+    </footer>
+</body>
+</html>

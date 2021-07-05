@@ -1,0 +1,134 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>عضویت در سایت</title>
+<table border="4" height="100%" width="100%">
+<table border="4" height="50" width="100%" align="center">
+
+<marquee behavior="alternate" bgcolor="#FF0004" font loop="100" direction="left" height="50" >
+ نگـــــــــــــین زعفـــــــــران</marquee>
+<tr>
+<td width="33%" align="center" color="red">
+<a href="asli.html" target="blank"style="text-decoration:none">
+<b><font color="#000000">صفحه اصلی</font></b></a></td>
+<td width="33%" align="center"><strong> زعفران و خواص ان</strong></td>
+<td width="33%" align="center" color="red">
+<strong>عضویت درسایت</strong></td>
+</tr>
+</table>
+<style type="text/css">
+body{background:#FFFBFB}
+#d1{width:400px; height:530px; background:#FFFFFF; margin:0px auto;text-align:center;}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+<div id="d1">
+نام<form action="" method="get" name="frm">
+   
+ <p>  <input type="text" name="fname" /> </p>
+   
+<p> نام خانوادگی</p>
+    
+<p><input type="text" name="lastname"/></p>
+
+ <p>   نام پدر                </p>
+   
+<p>     <input type="text" name="fathername"/></p>
+
+<p>  کد ملی     </p>
+    
+<p><input type="text" name="Kodkrajowy"/></p>
+
+ <p> آدرس     </p>
+    
+<p><input type="text" name="Adres"/></p>
+
+<p> سن                    </p>
+     
+<p> <input type="text" name="age"/></p>
+    
+ <p> ایمیل     </p>
+ 
+<p>   <input type="text"name="email"/> </p>
+ 
+      
+<p>     <input type="button" value="sent" onClick="text()"/>
+        <input type="reset" name="resetForm" value="reset">
+		<input type="button" onClick="test()" value="test"/>
+         
+</p>
+ 
+
+</form>
+
+</div>
+    
+  <script type="text/javascript">
+   
+function text(){
+   
+objfrm=document.frm;
+   
+objin=objfrm.fname;
+   
+alert(objin.value);
+   
+objin=objfrm.lastname;
+   
+alert(objin.value);
+   
+objin=objfrm.fathername;
+   
+alert(objin.value);
+   
+objin=objfrm.Kodkrajowy;
+   
+alert(objin.value);
+  
+objin=objfrm.Adres;
+   
+alert(objin.value);
+  
+objin=objfrm.age;
+   
+alert(objin.value);
+ 
+objin=objfrm.email;{
+
+	 str=objin.value;
+	// str='24 asx 12345/ba';
+	// re=/^[1-9]{2}\s [a-z]{3}\s\d {5} \/ (ab| |cd| |ba)$/gi;
+	//re=/^(http(s)?:\/\/)?(www.)?[a-z0-9]+([._][a-z0-9]+)*\.[a-z]{2,5}$/i;url
+	re=/^[a-z0-9]+([.][a-z0-9]+)\\@[a-z0-9]+([.][a-z0-9]+)\.[a-z]{2,5}$/gi;//email
+	 res=str.match(re);
+	 if(res){
+		 objin.style.backgroundcolor='green';
+	 }else{objin.style.backgroundcolor='red';} 
+	 alert(objin.value);
+	}
+}
+     
+ </script>
+   <h2  align="right">         </h2> 
+       </pre></h4>
+    </div>
+<footer >
+        <hr align="right">
+        <h1 align="right"> خواص زعفران ها</h1>
+     <h3  align="right"><pre>
+خواص زعفران و نمونه های مختلف زعفران را از سایت من دنبال کنید
+</pre></h3>
+           
+                <img src="logo.jpeg" style="float:right;">
+        
+    </footer>
+</body>
+</html>
